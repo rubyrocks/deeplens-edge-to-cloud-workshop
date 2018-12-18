@@ -111,11 +111,5 @@ IoT topics are an easy to transfer information from edge devices back into the c
 
 We've seen in the IoT topics that our model outputs a label and a confidence score, but since it's a *detection* model it also outputs a *localization*, which in this case is bounding box coordinates. The best way to get a sense of this is to visualize the output for yourself.
  
-Aside from publishing messages, the default project also streams inference output to a file locally on disk. If you register your own device, it's possible to view this over brwoser; in this lab, you are on the device itself, and so you can easily visualize it fom the local stream.
-
-To view the output, open a terminal (on the Deeplens desktop UI, choose the top left button and search for terminal) and enter the following command:
-
-`mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg`
-
-Please visit https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-viewing-device-output-on-device.html for more options to view the device stream
+Aside from publishing messages, the default project also streams inference output to a file locally on disk, which we can view in our browser. You should have downloaded a streaming certificate as part of your registration process; on the device page, go to the **Project output** panel and expand **View video output**. Select your browser and follow the instructions to see inference in real time.
 
