@@ -2,21 +2,36 @@
 
 ![architecture](https://user-images.githubusercontent.com/36491325/48433430-107a2480-e745-11e8-9069-2f6a19ae5dce.png)
 
-### Step 0 - Login to AWS DeepLens Device & AWS Account
+### Step 0 - Register your DeepLens & Create IAM Policies / Permissions
 
-In this workshop, you have an AWS DeepLens device in front of you connected to a monitor, keyboard, and mouse. AWS DeepLens runs an Ubuntu OS. Login to the device with the password **Aws2017!**.
+To participate in this workshop, you will need to first [register your DeepLens device](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started-register.html). Next, make sure you have the following roles created with the following permissions:
 
-We have already pre-registered your devices to workshop accounts. You can find the information for your account on the card in front of you taped to your monitor.
+**AWSDeepLensGreengrassGroupeRole**
+* AWSDeepLensLambdaFunctionAccessPolicy (*Default*)
+* AmazonS3FullAccess (*Added*)
 
-Open a Firefox browser on the left panel. Once Firefox is open, type **console.aws.amazon.com** into the url bar.
-(**Note**: If the login page says "Root user sign in" and there's already an email showing, select **Sign in to a different account** and then type in your **AWS Account** number on your card.)
+**AWSDeepLensGreengrassRole**
+* AWSGreengrassResourceAccessRolePolicy (*Default*)
+* AmazonS3FullAccess (*Added*)
 
-Once your login page shows three fields, please enter the following:
-* Account ID or alias: the **AWS Account** number on your card
-* IAM user name: the **User** name on your card
-* Password: **Aws2017!**
-
-Next, make sure you're in N. Virginia region, and navigate to the DeepLens Dashboard.
+**AWSDeepLensLambdaRole**
+* AmazonS3FullAccess (*Added*)
+* CloudWatchFullAccess (*Added*)
+* AmazonDynamoDBFullAccess (*Added*)
+* AmazonRekognitionFullAccess (*Added*)
+* AmazonDynamoDBFullAccesswithDataPipeline (*Added*)
+* AWSDeepLensLambdaFunctionAccessPolicy (*Added*)
+* AWSDeepLensServiceRolePolicy (*Added*)
+ 
+**AWSDeepLensSeviceRole**
+* AWSDeepLensServiceRolePolicy (*Default*)
+* AmazonS3FullAcess (*Added*)
+ 
+**rekognizeEmotions**
+* AmazonS3FullAccess (*Added*)
+* CloudWatchFullAccess (*Added*)
+* AmazonSynamoDBFullAccess (*Added*)
+* AmazonRekognitionFullAccess (*Added*)
 
 ### Step 1- Create Project
 
