@@ -20,7 +20,7 @@ The workshop consists of 3 steps:
 
 # Hands-on Step 1: Build and train a face detection model in SageMaker
 
-In this step, you will build and train a face detection model. Follow instructions here: [SageMaker lab](https://github.com/mahendrabairagi/reInventWorkshop1/tree/master/SageMaker%20lab)
+In this step, you will build and train a face detection model. Follow instructions here: [SageMaker lab](https://github.com/kenstler/deeplens-edge-to-cloud-workshop/tree/master/SageMaker%20lab)
 
 # Hands-on Step 2: Build a project to detect faces and send the cropped faces to S3 bucket
 
@@ -56,7 +56,7 @@ Choose the python blueprint and click **Configure**/
 
 Click **Create Function**.
 
-Scroll down to **Function Code**. Once generated, replace the default script with the [inference script](https://raw.githubusercontent.com/mahendrabairagi/reInventWorkshop1/master/Inference%20Lambda/inference-lambda.py) here by copying and pasting.
+Scroll down to **Function Code**. Once generated, replace the default script with the [inference script](https://raw.githubusercontent.com/kenstler/deeplens-edge-to-cloud-workshop/master/Inference%20Lambda/inference-lambda.py) here by copying and pasting.
 
 You can select the inference script, by selecting Raw in the Github page and choosing the script using ctrl+A/ cmd+A . Copy the script and paste it into the lambda function (make sure you delete the default code).
 
@@ -167,7 +167,7 @@ Choose **Author from scratch**
 
 Choose **Create function**
 
-Replace the default script with the script in [recognize-emotions.py](https://raw.githubusercontent.com/mahendrabairagi/reInventWorkshop1/master/Integrate%20with%20Rekognition/rekognize-emotions.py). Copy the script and paste it into the lambda function (make sure you delete the default code).
+Replace the default script with the script in [recognize-emotions.py](https://raw.githubusercontent.com/kenstler/deeplens-edge-to-cloud-workshop/master/Integrate%20with%20Rekognition/rekognize-emotions.py). Copy the script and paste it into the lambda function (make sure you delete the default code).
 
 Make sure you enter the table name you created earlier in the section highlighted below:
 
