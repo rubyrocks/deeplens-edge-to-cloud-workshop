@@ -1,3 +1,6 @@
+https://pages.awscloud.com/Virtual-Hands-On-Worshop-Get-Started-with-Machine-Learning-ML-in-the-Cloud-and-at-the-Edge_2019_0001-MCL_OD.html?trk=FB_AI_DeepLens_Webinar_v2&sc_channel=PSM&sc_campaign=field&sc_publisher=FB&sc_category=DeepLens&sc_country=US&sc_geo=NAMER&sc_outcome=aware&sc_medium=FIELD-P%7CFB%7CSocial-P%7CAll%7CAW%7CWebinar%7CDeepLens%7CUS%7CEN%7CImage
+
+
 ![image](/screenshots/Slide01.jpeg)
 ![image](/screenshots/Slide02.jpeg)
 ![image](/screenshots/Slide03.jpeg)
